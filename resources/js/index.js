@@ -14,7 +14,6 @@ export default function slider({
     behaviour,
     snap,
     tooltips,
-    onChange = console.log,
 }) {
     return {
         start,
@@ -43,7 +42,6 @@ export default function slider({
 
             
             this.component.noUiSlider.on('update', (values) => {
-                console.log("Values :",values)
 
                 document.addEventListener('livewire:load', function () {
                     setInterval(() => Livewire.dispatch('nextSlot'), 4000);
