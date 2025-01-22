@@ -33,6 +33,7 @@ style="display: none"
                 start: @js($getStart()),
                 state: @js($getStates()),
                 connect: @js($getConnect()),
+                pips: @js($getPips()),
                 range: @js($getRange()),
                 step: @js($getStep()),
                 behaviour: @js($getBehaviour()),

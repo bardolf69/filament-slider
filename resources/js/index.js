@@ -5,6 +5,7 @@ export default function slider({
     element,
     start,
     connect,
+    pips = false,
     range = {
         min: 0,
         max: 10
@@ -20,6 +21,7 @@ export default function slider({
         element,
         connect,
         range,
+        pips,
         component: null,
         state,
         step,
@@ -38,6 +40,7 @@ export default function slider({
                 step: window.Alpine.raw(step),
                 behaviour: window.Alpine.raw(behaviour),
                 snap: window.Alpine.raw(snap),
+                pips: window.Alpine.raw(pips),
             });
 
             

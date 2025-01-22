@@ -36,6 +36,8 @@ class InputSliderGroup extends Component
 
     protected ?array $range = null;
 
+    protected ?array $pips = null;
+
     protected ?array $tooltips = null;
 
     protected bool $isEnableTooltips = false;
@@ -250,6 +252,31 @@ class InputSliderGroup extends Component
     public function range(array $range)
     {
         $this->range = $range;
+
+        return $this;
+    }
+
+
+    /**
+     * Get the value of pips
+     */
+    public function getPips()
+    {
+        if ($this->pips) {
+            return $this->pips;
+        }
+
+        return false;
+    }
+
+    /**
+     * Set the value of pips
+     *
+     * @return self
+     */
+    public function pips(array $pips)
+    {
+        $this->pips = $pips;
 
         return $this;
     }
